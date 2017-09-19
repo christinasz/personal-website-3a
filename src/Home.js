@@ -1,16 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import {NavLink} from 'react-router-dom';
+
+import ArtLink from './components/ArtLink.js'
+import Icon from './components/Icon.js'
 
 import Laptop from './assets/Laptop.svg'
 import Notebook from './assets/Notebook.svg'
 import Resume from './assets/Resume.svg'
 
+
 const Background = styled.div`
-  width: 100%;
-  height: 100%;
   text-align: center;
   position: absolute;
+  height: 100%;
+  width: 100%;
 `;
 
 const Name = styled.h1`
@@ -23,81 +26,23 @@ const Icons = styled.div`
   text-align:left;
 `;
 
-const IconLink = styled.a`
-  padding: 8px;
-  color: #AA076B;
-  transition: all 0.2s;
-  &:hover {
-    color: #61045F;
-  }
-  &:visited, &:focus {
-    color:#AA076B
-  }
-`;
-
 const VerticalCenter = styled.div`
   position: relative;
+  margin: 0 auto;
+  width: 50%;
   z-index: 100;
   text-align: left;
   top: 40%;
   background-color: rgba(255,255,255,0.9);
   padding: 28px;
   transform: translateY(-50%)
-`
-
-function randomDegree() {
-  return Math.floor(Math.random() * 360);
-}
-
-const Art = styled.img`
-  height: 40vh;
-  padding: 28px;
-  transform: rotate(${props => props.degree}deg);
-`;
-
-const ArtLink = styled(NavLink)`
-  span {
-    opacity: 0;
-  }
-  &:hover {
-    span {
-      opacity: 1;
-    }
-  }
-`;
-
-const ArtLinkTitle = styled.span`
-  z-index: 9;
-  font-size: 2em;
-  font-weight: 100;
-  transition: all 0.3s;
-  color: #AA076B;
-  padding: 16px;
 `;
 
 
-const StyledPage = styled.div`
-  position: absolute;
-`;
-
-const Icon = (props) => (
-  <IconLink href={props.link} target='_blank'>
-    <i className={'fa fa-lg fa-' + props.name}></i>
-  </IconLink>
-)
-
-const Page = (props) => (
-  <ArtLink to={'/' + props.path}>
-    <StyledPage style={props.style} >
-      <Art src={props.src} degree={randomDegree()} />
-      <ArtLinkTitle name={props.name}>{props.name}</ArtLinkTitle>
-    </StyledPage>
-  </ArtLink>
-)
 
 const Home = () => (
   <Background>
-    <VerticalCenter className='container'>
+    <VerticalCenter>
       <Name>Christina Zhang</Name>
       Hello! I'm a 3A Computer Science student at the University of Waterloo.
       <br/>
@@ -111,9 +56,9 @@ const Home = () => (
       </Icons>
     </VerticalCenter>
 
-    <Page name='Resume' path='resume' src={Resume} style={{top: '0', left: '0'}}/>
-    <Page name='Lecture Notes' path='lecture-notes' src={Notebook} style={{bottom: '50%', right: '0'}}/>
-    <Page name='Projects' path='projects' src={Laptop} style={{bottom: '0', right: '50%'}}/>
+    <ArtLink name='Resume' path='resume' src={Resume} width='27vw' style={{top: '0', left: '0'}}/>
+    <ArtLink name='Lecture Notes' path='lecture-notes' width='27vw' src={Notebook} style={{bottom: '33%', right: '0'}}/>
+    <ArtLink name='Projects' path='projects' src={Laptop} width='27vw' style={{bottom: '0', right: '50%'}}/>
 
   </Background>
 )

@@ -33,3 +33,10 @@ h6 { font-size: .75em; }
   border: 0.5px solid black;
   top: -0.8em;
 }
+
+a {
+  &:hover, &:visited, &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}

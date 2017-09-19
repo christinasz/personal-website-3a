@@ -10,3 +10,4 @@ My lecture notes are written in Markdown and LaTeX, and rendered with React-Rich
 
 To-do:
 * Projects page
+* Mobile version (I've broken a cardinal rule of web design...)
