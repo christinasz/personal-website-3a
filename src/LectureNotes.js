@@ -5,6 +5,8 @@ import {Route, NavLink, Link} from 'react-router-dom';
 
 import './lecturestyle.min.css'
 
+import 'katex/dist/katex.min.css'
+
 // An array of Objects that organizes my notes by subject and lecture number
 // {name: String, lecture: [Array of numbers]}
 const notes = [
@@ -27,11 +29,11 @@ const notes = [
   },
   {
     name: 'CS341',
-    lectures: [1, 2, 3]
+    lectures: [1, 2, 3, 4]
   },
   {
     name: 'CS350',
-    lectures: [1, 2, 3]
+    lectures: [1, 2, 3, 4]
   }
 ];
 
@@ -57,9 +59,12 @@ const Navbar = styled.ul `
   padding-left: 0;
   color: white;
   list-style: none;
-  min-height: 100vh;
   flex: 1 0 1;
   background-color: #333;
+
+  @media only screen and (min-device-widdth: 768 px) {
+    min-height: 100vh;
+  }
 `;
 
 const NoteContainer = styled.div `

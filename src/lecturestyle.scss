@@ -19,12 +19,31 @@ h6 { font-size: .75em; }
     position: relative;
     font-size: 0.65em;
     top: -1.3em;
+    .frac-line {
+      top: 0em;
+      border-width: 0.2px;
+    }
+    .vlist {
+      font-size: 0.8em;
+      top: -0.6em;
+    }
+    .mfrac {
+      position: relative;
+      top: -1em;
+    }
   }
 }
 
 .mfrac {
   .vlist {
     font-size: inherit;
+  }
+}
+
+.sqrt {
+  .vlist {
+    position: relative;
+    top: -1em;
   }
 }
 
