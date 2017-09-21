@@ -4,6 +4,7 @@ September 19, 2017
 
 ## Mutual Exclusion
 
+* When threads access the same global variable at the same time, it creates **race conditions**
 * Mutual exclusion is used to prevent race conditions in critical sections (from last lecture)
 * We enforce this using **locks**
 

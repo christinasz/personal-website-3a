@@ -29,11 +29,11 @@ const notes = [
   },
   {
     name: 'CS341',
-    lectures: [1, 2, 3, 4]
+    lectures: [1, 2, 3, 4, 5]
   },
   {
     name: 'CS350',
-    lectures: [1, 2, 3, 4]
+    lectures: [1, 2, 3, 4, 5]
   }
 ];
 
@@ -62,7 +62,7 @@ const Navbar = styled.ul `
   flex: 1 0 1;
   background-color: #333;
 
-  @media only screen and (min-device-widdth: 768 px) {
+  @media only screen and (min-device-width: 768px) {
     min-height: 100vh;
   }
 `;
