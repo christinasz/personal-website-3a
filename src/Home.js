@@ -29,7 +29,6 @@ const Icons = styled.div`
 const VerticalCenter = styled.div`
   position: relative;
   margin: 0 auto;
-  width: 50%;
   z-index: 100;
   text-align: left;
   top: 40%;
@@ -38,11 +37,24 @@ const VerticalCenter = styled.div`
   transform: translateY(-50%)
 `;
 
+const ArtContainer = styled.div`
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+
+  @media only screen and (min-device-width: 768px) {
+    position: static;
+    dislay: block;
+    padding: 0;
+  }
+`;
+
 
 
 const Home = () => (
   <Background>
-    <VerticalCenter>
+    <VerticalCenter className='container'>
       <Name>Christina Zhang</Name>
       Hello! I'm a 3A Computer Science student at the University of Waterloo.
       <br/>
@@ -55,10 +67,11 @@ const Home = () => (
         <Icon name='envelope' link='mailto:christina.s.zhang@uwaterloo.ca'/>
       </Icons>
     </VerticalCenter>
-
-    <ArtLink name='Resume' path='resume' src={Resume} width='27vw' style={{top: '0', left: '0'}}/>
-    <ArtLink name='Lecture Notes' path='lecture-notes' width='27vw' src={Notebook} style={{bottom: '33%', right: '0'}}/>
-    <ArtLink name='Projects' path='projects' src={Laptop} width='27vw' style={{bottom: '0', right: '50%'}}/>
+    <ArtContainer>
+      <ArtLink spin name='Resume' path='resume' src={Resume} width='27vw' style={{top: '0', left: '0'}}/>
+      <ArtLink spin name='Lecture Notes' path='lecture-notes' width='27vw' src={Notebook} style={{bottom: '20%', right: '2%'}}/>
+      <ArtLink spin name='Projects' path='projects' src={Laptop} width='27vw' style={{bottom: '2%', right: '50%'}}/>
+    </ArtContainer>
 
   </Background>
 )

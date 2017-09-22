@@ -28,17 +28,18 @@ const Heading = styled.h2 `
 const Container = styled.div `
   display: flex;
   min-height: 100vh;
+  width: 100%;
 `;
 
 const SideColumn = styled.div `
-  flex: 1;
+  flex: 1 0 0 ;
+  width: 100%;
 `
 const CenterColumn = styled.div `
-  flex: 3;
+  flex: 5;
   padding: 28px;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 999;
-  position: relative;
 `
 
 const Link = styled.a`
@@ -160,11 +161,9 @@ const Skills = () => (
 const Resume = () => (
   <Container>
     <SideColumn>
-      <ArtLink name='Home' path='' src={House} style={{
-      top: '33%',
-      left: '0'
-    }}/>
-
+      <ArtLink name='Home' path='' src={House} style={{position: 'relative', display: 'block'}} />
+      <ArtLink name='Projects' path='projects' src={Laptop} style={{position: 'relative', display: 'block'}} />
+      <ArtLink name='Lecture Notes' path='lecture-notes' src={Notebook} style={{position: 'relative', display: 'block'}}/>
     </SideColumn>
     <CenterColumn className='container'>
       <Header>
@@ -180,14 +179,6 @@ const Resume = () => (
       <Skills/>
     </CenterColumn>
     <SideColumn>
-      <ArtLink name='Lecture Notes' path='lecture-notes' src={Notebook} style={{
-      top: '0',
-      right: '0'
-      }}/>
-      <ArtLink name='Projects' path='projects' src={Laptop} style={{
-        bottom: '0',
-        right: '0'
-      }}/>
     </SideColumn>
   </Container>
 )
