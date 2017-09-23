@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
+import Icon from './Icon'
 
 import {colors} from './../constants'
 
@@ -12,6 +13,11 @@ const Art = styled.img`
   width: 100%;
   padding: 18px;
 
+  ${props => props.show ? 'display:none;' : ''}
+
+  @media only screen and (min-device-width: 768px) {
+    display: inline-block;
+  }
   ${props => props.spin ? `
     @keyframes spin {
       from {
@@ -23,6 +29,7 @@ const Art = styled.img`
     }
 
     @media only screen and (min-device-width: 768px) {
+      display: static;
       animation: 300s infinite normal spin;
       animation-timing-function: linear;
       &:hover {
@@ -56,12 +63,13 @@ const Container = styled(NavLink)`
 
 const Title = styled.span`
 
-  color:  ${colors.primary};
+  color:   ${props => props.show ? 'white' : colors.primary};
   font-size: 1.2em;
   padding: 0px 8px;
 //  border: 1px solid ${colors.primary};
 
   @media only screen and (min-device-width: 768px) {
+      color:  ${colors.primary};
     font-size: 2em;
     font-weight: 100;
     margin: 24px;
@@ -72,8 +80,9 @@ const Title = styled.span`
 
 const ArtLink = (props) => (
   <Container to={'/' + props.path} style={props.style}>
-      <Title name={props.name}>{props.name}</Title>
-      <Art className='Art' spin={props.spin} src={props.src} degree={randomDegree()} width={props.width} name={props.name} />
+      <Icon name={props.iconName} link={null}/>
+      <Title name={props.name} show={props.showIconOnMobile}>{props.name}</Title>
+      <Art className='Art' spin={props.spin} show={props.showIconOnMobile} src={props.src} degree={randomDegree()} width={props.width} name={props.name} />
   </Container>
 )
 

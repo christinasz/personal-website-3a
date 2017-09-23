@@ -26,20 +26,30 @@ const Heading = styled.h2 `
 `;
 
 const Container = styled.div `
-  display: flex;
   min-height: 100vh;
   width: 100%;
+  padding-bottom: 10%;
 `;
 
-const SideColumn = styled.div `
-  flex: 1 0 0 ;
+const ArtContainer = styled.div`
+  padding: 8px;
+  position: fixed;
+  z-index: 1000;
   width: 100%;
-`
+  background-color: ${colors.primary};
+  bottom: 0;
+  display: flex;
+
+  @media only screen and (min-device-width: 768px) {
+    background-color:white;
+    position: static;
+    dislay: block;
+    padding: 0;
+  }
+`;
 const CenterColumn = styled.div `
-  flex: 5;
   padding: 28px;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 999;
 `
 
 const Link = styled.a`
@@ -53,7 +63,7 @@ const Link = styled.a`
 const WorkExperience = () => (
   <div>
     <Heading>Work Experience</Heading>
-    <h3>Bell Network Big Data Centre of Excellence</h3>
+    <h3>Bell Canada - Network Big Data</h3>
     <div className='row'>
       <div className='col'>
         <h4>Web Developer / UI Designer</h4>
@@ -160,26 +170,24 @@ const Skills = () => (
 )
 const Resume = () => (
   <Container>
-    <SideColumn>
-      <ArtLink name='Home' path='' src={House} style={{position: 'relative', display: 'block'}} />
-      <ArtLink name='Projects' path='projects' src={Laptop} style={{position: 'relative', display: 'block'}} />
-      <ArtLink name='Lecture Notes' path='lecture-notes' src={Notebook} style={{position: 'relative', display: 'block'}}/>
-    </SideColumn>
+    <ArtContainer>
+      <ArtLink name='Home' showIconOnMobile={true} iconName='home' path='' src={House} style={{position: 'relative', display: 'block'}} />
+      <ArtLink name='Projects' showIconOnMobile={true} iconName='laptop' path='projects' src={Laptop} style={{position: 'relative', display: 'block'}} />
+      <ArtLink name='Lecture Notes' showIconOnMobile={true} iconName='book' path='lecture-notes' src={Notebook} style={{position: 'relative', display: 'block'}}/>
+    </ArtContainer>
     <CenterColumn className='container'>
       <Header>
         <Heading>Christina Zhang</Heading>
         <Link href={pdfResume} target='_blank'>PDF Version</Link>
       </Header>
+      <Skills/>
+      <hr/>
       <WorkExperience/>
       <hr/>
       <Projects/>
       <hr/>
       <Education/>
-      <hr/>
-      <Skills/>
     </CenterColumn>
-    <SideColumn>
-    </SideColumn>
   </Container>
 )
 
