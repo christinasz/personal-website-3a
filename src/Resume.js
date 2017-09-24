@@ -60,6 +60,18 @@ const Link = styled.a`
   color: black;
 `;
 
+const Summary = () => (
+  <div>
+    <Heading>Summary</Heading>
+    <ul>
+      <li>Familiar with multiple high-level programming languages such as C++ and Python</li>
+      <li>Strong visual sense cultivated from eight years of freelance design ventures</li>
+      <li>Proficient in problem-solving and learning from self-teaching Photoshop and web development</li>
+      <li>Experienced in working effectively in several different environments, from startup to corporate</li>
+    </ul>
+  </div>
+)
+
 const WorkExperience = () => (
   <div>
     <Heading>Work Experience</Heading>
@@ -116,7 +128,7 @@ const Projects = () => (
       </RightAligned>
     </div>
     <ul>
-      <li>iOS and Android guessing game that utlizes GIPHY’s API for content, written in React Naive</li>
+      <li>iOS and Android guessing game that utilizes GIPHY’s API for content, written in React Native</li>
       <li>Lead developer and UI designer on the project, ranked within top 30% of all participants</li>
     </ul>
     <div className='row'>
@@ -130,7 +142,7 @@ const Projects = () => (
       </RightAligned>
     </div>
     <ul>
-      <li>Creating a website to house portfolio, projects, and contact information, hosted on Firebase</li>
+      <li>Creating a website to house portfolio, projects, and contact information</li>
       <li>Includes lecture notes that are written in Markdown/LaTeX and rendered dynamically on the site</li>
     </ul>
   </div>
@@ -180,6 +192,8 @@ const Resume = () => (
         <Heading>Christina Zhang</Heading>
         <Link href={pdfResume} target='_blank'>PDF Version</Link>
       </Header>
+      <Summary />
+      <hr/>
       <Skills/>
       <hr/>
       <WorkExperience/>

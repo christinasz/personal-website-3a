@@ -64,12 +64,12 @@ const Container = styled(NavLink)`
 const Title = styled.span`
 
   color:   ${props => props.show ? 'white' : colors.primary};
-  font-size: 1.2em;
+  display: inline-block;
   padding: 0px 8px;
 //  border: 1px solid ${colors.primary};
 
   @media only screen and (min-device-width: 768px) {
-      color:  ${colors.primary};
+    color:  ${colors.primary};
     font-size: 2em;
     font-weight: 100;
     margin: 24px;
