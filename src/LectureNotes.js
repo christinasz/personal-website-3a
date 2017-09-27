@@ -29,11 +29,11 @@ const notes = [
   },
   {
     name: 'CS341',
-    lectures: [1, 2, 3, 4, 5]
+    lectures: [1, 2, 3, 4, 5, 6]
   },
   {
     name: 'CS350',
-    lectures: [1, 2, 3, 4, 5]
+    lectures: [1, 2, 3, 4, 5, 6]
   }
 ];
 
@@ -71,6 +71,12 @@ const NoteContainer = styled.div `
   width: 100%;
   flex: 5;
   padding: 32px;
+  tr {
+    td, th {
+      border: 1px solid gray;
+      padding: 4px;
+    }
+  }
 `;
 
 const Info = styled.div `
