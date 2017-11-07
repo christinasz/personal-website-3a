@@ -1,5 +1,7 @@
 # Lecture 11
 
+October 17, 2017
+
 ## Graph Algorithms
 Graph $G = (V, E)$ where $V$ = vertices (nodes) $|V| = n$ and $E \subseteq V \times V$ edges $|E| = m$
 

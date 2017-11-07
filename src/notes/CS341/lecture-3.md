@@ -92,7 +92,12 @@ Are there algorithms better than $\Theta(n^2)$ for 3-sum? Only recently in 2014 
 
 * Binary search: 1 subproblem, 1 step
   * $T(n) = T(\frac{n}{2}) + 1$
-* Mergesort: $T(n) = 2T(\frac{n}{2} + c \cdot n)$
+* Mergesort: $T(n) = 2T(\frac{n}{2}
+* 
+* 
+* 
+* 
+*  + c \cdot n)$
 
 ### Solving recurrence relations
 2 basic approaches
@@ -127,7 +132,7 @@ Merge sort recurrence is $T(n) \in \Theta(n \log n)$
 
 ### Guess + induction
 
-Prove b induction on $n$ that $T(n) = T(\lfloor \frac{n}{2} \rfloor) + T(\lceil \frac{n}{2} \rceil) + n -1$ gives $O(n \log n) bound$, i.e. $T(n) \leq c \cdot n \log n$
+Prove b induction on $n$ that $T(n) = T(\lfloor \frac{n}{2} \rfloor) + T(\lceil \frac{n}{2} \rceil) + n -1$ gives $O(n \log n)$ bound, i.e. $T(n) \leq c \cdot n \log n$
 
 Base Case: n=2
 
@@ -159,7 +164,7 @@ $T(n) = T(\frac{n-1}{2}) + T(\frac{n+1}{2}) + n - 1$
 
 $\leq$ by induction ... manipulate to get $\leq c \cdot n \log n$
 
-**Example:** $T(n) = 2T(\frac{n}{2}) + n
+**Example:** $T(n) = 2T(\frac{n}{2}) + n$
 
 Claim?! $T(n) \in O(n)$
 
