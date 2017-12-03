@@ -124,7 +124,7 @@ Given items $1, ..., n$ and probabilities $p_1, ... p_n$, construct a binary sea
 
 Suppose $p_1 = p_2 = ... p_4 = \frac{1}{4}$
 
-![](https://i.imgur.com/92yv9m6.png) Search cost: $4 \cod \frac{1}{4} \cdot 3 = 3$
+![](https://i.imgur.com/92yv9m6.png) Search cost: $4 \cdot \frac{1}{4} \cdot 3 = 3$
 
 Now suppose $p_1 = 0.7, p_2 = p_3 = p_4 = .1$
 
