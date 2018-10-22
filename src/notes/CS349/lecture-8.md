@@ -1,6 +1,7 @@
-## September 24, 2018
+# CS349 Lecture 8
 
 ### Drawing with Swing
+
 You can either:
 1. Use swing components
   * Build your UI entirely out of Swing GUI components fuck my life he skipped the slide again

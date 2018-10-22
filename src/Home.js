@@ -56,7 +56,7 @@ const Home = () => (
   <Background>
     <VerticalCenter className='container'>
       <Name>Christina Zhang</Name>
-      Hello! I'm a 3A Computer Science student at the University of Waterloo.
+      Hello! I'm a 3B Computer Science student at the University of Waterloo.
       <br/>
       In short, I like designs, baking, and making things.
       <br />

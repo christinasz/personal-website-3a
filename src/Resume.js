@@ -169,7 +169,7 @@ const Skills = () => (
   <div>
     <Heading>Skills</Heading>
     <h3>Proficient:</h3>
-    <div>C/C++, Python, HTML5, CSS3 (and Sass), React.js, JavaScript</div>
+    <div>Swift, C/C++, Python, HTML5, CSS3 (and Sass), React.js, JavaScript</div>
     <br/>
     <h3>Familiar: </h3>
     <div>SQL, Impala, Java</div>
