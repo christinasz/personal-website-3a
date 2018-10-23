@@ -25,9 +25,17 @@ const Name = styled.h1 `
   color: ${colors.text};
   text-align: right;
   font-weight: 100;
-	font-size: 3.2em;
+	font-size: 2.5em;
   font-family: 'Playlist', sans-serif;
-	text-align: right;
+	text-align: center;
+	@media only screen and (min-width: 495px) {
+		text-align: right;
+		font-size: 3.2em;
+	}
+	@media only screen and (min-width: 495px) {
+		text-align: right;
+		font-size: 4em;
+	}
 	@media only screen and (min-width: 768px) {
   	font-size: 6.2em;
 	}
@@ -45,8 +53,7 @@ const Subtitle = styled.h3 `
 
 const Square = styled.div `
   width: 35%;
-	max-width: 500px;
-	align-self: flex-start;
+	max-width: 450px;
 `;
 
 const Icons = styled.div `
@@ -58,7 +65,8 @@ const Icons = styled.div `
 
 const Content = styled.div `
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	max-width: 1080px;
 `;
 
 const blurbs = [
@@ -83,7 +91,6 @@ const Navigation = styled.ul `
 		text-align: right;
 		width: 50%;
 		list-style-type: none;
-		align-self: flex-end;
 `;
 
 class Home extends Component {
