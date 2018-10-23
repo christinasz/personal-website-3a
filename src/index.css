@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: Playlist;
+  src: url(/assets/fonts/Playlist.otf);
+}
+
+.verticalCenter {
+  position: relative;
+  margin: 0 auto;
+  z-index: 100;
+  text-align: left;
+  top: 40%;
+  padding: 28px;
+  transform: translateY(-50%);
 }

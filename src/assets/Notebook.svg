@@ -1,1 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 323 195"><defs><style>.cls-1{isolation:isolate;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:#61045f;}.cls-4{fill:#d3c494;}.cls-5{fill:#f4e8be;}.cls-6{opacity:0.6;}.cls-6,.cls-9{mix-blend-mode:multiply;}.cls-7{fill:#333;}.cls-8{fill:gray;}.cls-9{opacity:0.61;}</style><linearGradient id="linear-gradient" x1="161.5" y1="2" x2="161.5" y2="193" gradientUnits="userSpaceOnUse"><stop offset="0.62" stop-color="#aa076b"/><stop offset="0.78" stop-color="#aa076b"/><stop offset="1" stop-color="#61045f"/></linearGradient></defs><title>Notebook</title><g class="cls-1"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-2" y="2" width="323" height="191" rx="5.5" ry="5.5"/><rect class="cls-3" x="152" width="20" height="195"/><rect class="cls-4" x="10.71" y="11.61" width="301.29" height="171.78" rx="5.5" ry="5.5"/><rect class="cls-5" x="18.71" y="12" width="285.29" height="171" rx="5.5" ry="5.5"/><g class="cls-6"><rect class="cls-7" x="170" y="28" width="57.84" height="3.61"/><rect class="cls-7" x="235.3" y="28" width="34.51" height="3.61"/><rect class="cls-7" x="170" y="39.39" width="28.92" height="3.61"/><rect class="cls-7" x="204.51" y="39.39" width="44.78" height="3.61"/><rect class="cls-7" x="253.96" y="39.39" width="40.11" height="3.61"/><rect class="cls-7" x="170" y="50.39" width="13.99" height="3.61"/><rect class="cls-7" x="190.52" y="50.39" width="49.44" height="3.61"/><rect class="cls-7" x="245.56" y="50.39" width="15.86" height="3.61"/><rect class="cls-7" x="267.01" y="50.39" width="27.99" height="3.61"/><rect class="cls-7" x="193" y="61" width="57.84" height="3.61"/><rect class="cls-7" x="258.3" y="61" width="34.51" height="3.61"/><rect class="cls-7" x="170.3" y="61" width="18.7" height="4"/><rect class="cls-8" x="170" y="76" width="60" height="30"/><rect class="cls-7" x="236.3" y="76" width="34.51" height="3.61"/><rect class="cls-7" x="236.3" y="84" width="22.7" height="3.61"/></g><path class="cls-4" d="M162,183,40,190.15a5.57,5.57,0,0,1-6-5.63v-174a5.57,5.57,0,0,1,6-5.63L162,12Z"/><g class="cls-9"><polygon class="cls-7" points="85.42 69.2 135.26 70.12 135.26 66.44 85.42 65.4 85.42 69.2"/><polygon class="cls-7" points="47.1 68.49 78.75 69.08 78.75 65.26 47.1 64.6 47.1 68.49"/><polygon class="cls-7" points="131.36 37.77 155.21 38.73 155.21 35.1 131.36 34.09 131.36 37.77"/><polygon class="cls-7" points="87.91 36.03 126.65 37.58 126.65 33.88 87.91 32.23 87.91 36.03"/><polygon class="cls-7" points="47.1 34.39 83.76 35.86 83.76 32.06 47.1 30.5 47.1 34.39"/><polygon class="cls-7" points="144.53 48.96 155.96 49.34 155.96 45.71 144.53 45.31 144.53 48.96"/><polygon class="cls-7" points="96.96 47.4 139.13 48.78 139.13 45.12 96.96 43.63 96.96 47.4"/><polygon class="cls-7" points="77.91 46.77 92.04 47.24 92.04 43.45 77.91 42.95 77.91 46.77"/><polygon class="cls-7" points="47.1 45.76 72.86 46.61 72.86 42.77 47.1 41.87 47.1 45.76"/><polygon class="cls-7" points="85.42 57.91 135.26 59.19 135.26 55.51 85.42 54.1 85.42 57.91"/><polygon class="cls-7" points="47.1 56.92 78.75 57.73 78.75 53.92 47.1 53.02 47.1 56.92"/><polygon class="cls-7" points="138.58 59.67 153.94 60.06 153.94 56.04 138.58 55.61 138.58 59.67"/><polygon class="cls-7" points="144.53 99.02 155.96 99.01 155.96 95.38 144.53 95.36 144.53 99.02"/><polygon class="cls-7" points="96.96 99.07 139.13 99.02 139.13 95.36 96.96 95.3 96.96 99.07"/><polygon class="cls-7" points="77.91 99.09 92.04 99.07 92.04 95.29 77.91 95.27 77.91 99.09"/><polygon class="cls-7" points="47.1 99.12 72.86 99.09 72.86 95.26 47.1 95.22 47.1 99.12"/><polygon class="cls-7" points="85.42 110.09 135.26 109.68 135.26 106 85.42 106.28 85.42 110.09"/><polygon class="cls-7" points="47.1 110.4 78.75 110.14 78.75 106.32 47.1 106.5 47.1 110.4"/><polygon class="cls-7" points="138.58 110.05 153.94 109.92 153.94 105.89 138.58 105.98 138.58 110.05"/><polygon class="cls-7" points="85.42 121.3 135.26 120.53 135.26 116.85 85.42 117.5 85.42 121.3"/><polygon class="cls-7" points="47.1 121.89 78.75 121.4 78.75 117.58 47.1 118 47.1 121.89"/><polygon class="cls-7" points="138.58 120.87 153.94 120.63 153.94 116.61 138.58 116.81 138.58 120.87"/><polygon class="cls-7" points="131.36 131.66 155.21 131.11 155.21 127.49 131.36 127.97 131.36 131.66"/><polygon class="cls-7" points="87.91 132.66 126.65 131.77 126.65 128.07 87.91 128.86 87.91 132.66"/><polygon class="cls-7" points="47.1 133.59 83.76 132.75 83.76 128.95 47.1 129.7 47.1 133.59"/><polygon class="cls-7" points="85.42 143.93 135.26 142.42 135.26 138.74 85.42 140.13 85.42 143.93"/><polygon class="cls-7" points="47.1 145.08 78.75 144.13 78.75 140.31 47.1 141.19 47.1 145.08"/></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="54px" viewBox="0 0 89 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Notebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="62%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B594D7" offset="0%"></stop>
+            <stop stop-color="#7A57B2" offset="61.453683%"></stop>
+            <stop stop-color="#33225E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-969.000000, -561.000000)" fill-rule="nonzero">
+            <g id="Notebook" transform="translate(969.000000, 561.000000)">
+                <rect id="Rectangle-path" fill="url(#linearGradient-1)" x="0" y="1" width="89" height="53" rx="5.5"></rect>
+                <rect id="Rectangle-path" fill="#4A3379" x="42" y="0" width="6" height="54"></rect>
+                <rect id="Rectangle-path" fill="#D3C494" x="3" y="3" width="83" height="48" rx="5.5"></rect>
+                <rect id="Rectangle-path" fill="#F4E8BE" x="5" y="3" width="79" height="47" rx="5.5"></rect>
+                <g id="Group" opacity="0.6" style="mix-blend-mode: multiply;" transform="translate(47.000000, 8.000000)">
+                    <rect id="Rectangle-path" fill="#333333" x="0" y="0" width="15.73248" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="17.7616" y="0" width="9.38672" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="0" y="3.2125641" width="7.86624" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="9.38672" y="3.2125641" width="12.18016" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="22.83712" y="3.2125641" width="10.90992" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="0" y="6.31512821" width="3.80528" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="5.58144" y="6.31512821" width="13.44768" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="20.55232" y="6.31512821" width="4.31392" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="26.38672" y="6.31512821" width="7.61328" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="6.256" y="9.30769231" width="15.73248" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="24.0176" y="9.30769231" width="9.38672" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="0.0816" y="9.30769231" width="5.0864" height="1.12820513"></rect>
+                    <rect id="Rectangle-path" fill="#808080" x="0" y="13.5384615" width="16.32" height="8.46153846"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="18.0336" y="13.5384615" width="9.38672" height="1.01820513"></rect>
+                    <rect id="Rectangle-path" fill="#333333" x="18.0336" y="15.7948718" width="6.1744" height="1.01820513"></rect>
+                </g>
+                <path d="M44,50.0274485 L10.6407627,51.995409 C10.214003,52.028712 9.79301969,51.8797125 9.48087823,51.5848887 C9.16873677,51.2900648 8.99425311,50.8766338 9.0001445,50.4458121 L9.0001445,2.55418786 C8.99425311,2.12336623 9.16873677,1.70993519 9.48087823,1.41511132 C9.79301969,1.12028746 10.214003,0.971287965 10.6407627,1.00459105 L44,2.9615419 L44,50.0274485 Z" id="Shape" fill="#D3C494"></path>
+                <g id="Group" opacity="0.61" style="mix-blend-mode: multiply;" transform="translate(13.000000, 8.000000)" fill="#333333">
+                    <polygon id="Shape" points="10.5743119 10.8137931 24.2917431 11.0675862 24.2917431 10.0524138 10.5743119 9.76551724"></polygon>
+                    <polygon id="Shape" points="0.0275229358 10.617931 8.73853211 10.7806897 8.73853211 9.72689655 0.0275229358 9.54482759"></polygon>
+                    <polygon id="Shape" points="23.2183486 2.14344828 29.7825688 2.40827586 29.7825688 1.40689655 23.2183486 1.12827586"></polygon>
+                    <polygon id="Shape" points="11.259633 1.66344828 21.9220183 2.09103448 21.9220183 1.07034483 11.259633 0.615172414"></polygon>
+                    <polygon id="Shape" points="0.0275229358 1.21103448 10.1174312 1.61655172 10.1174312 0.568275862 0.0275229358 0.137931034"></polygon>
+                    <polygon id="Shape" points="26.8431193 5.23034483 29.9889908 5.33517241 29.9889908 4.3337931 26.8431193 4.22344828"></polygon>
+                    <polygon id="Shape" points="13.7504587 4.8 25.3568807 5.18068966 25.3568807 4.17103448 13.7504587 3.76"></polygon>
+                    <polygon id="Shape" points="8.50733945 4.6262069 12.3963303 4.75586207 12.3963303 3.71034483 8.50733945 3.57241379"></polygon>
+                    <polygon id="Shape" points="0.0275229358 4.34758621 7.11743119 4.58206897 7.11743119 3.52275862 0.0275229358 3.27448276"></polygon>
+                    <polygon id="Shape" points="10.5743119 7.69931034 24.2917431 8.05241379 24.2917431 7.03724138 10.5743119 6.64827586"></polygon>
+                    <polygon id="Shape" points="0.0275229358 7.4262069 8.73853211 7.64965517 8.73853211 6.59862069 0.0275229358 6.35034483"></polygon>
+                    <polygon id="Shape" points="25.2055046 8.18482759 29.4330275 8.29241379 29.4330275 7.18344828 25.2055046 7.06482759"></polygon>
+                    <polygon id="Shape" points="26.8431193 19.04 29.9889908 19.0372414 29.9889908 18.0358621 26.8431193 18.0303448"></polygon>
+                    <polygon id="Shape" points="13.7504587 19.0537931 25.3568807 19.04 25.3568807 18.0303448 13.7504587 18.0137931"></polygon>
+                    <polygon id="Shape" points="8.50733945 19.0593103 12.3963303 19.0537931 12.3963303 18.0110345 8.50733945 18.0055172"></polygon>
+                    <polygon id="Shape" points="0.0275229358 19.0675862 7.11743119 19.0593103 7.11743119 18.0027586 0.0275229358 17.9917241"></polygon>
+                    <polygon id="Shape" points="10.5743119 22.0937931 24.2917431 21.9806897 24.2917431 20.9655172 10.5743119 21.0427586"></polygon>
+                    <polygon id="Shape" points="0.0275229358 22.1793103 8.73853211 22.1075862 8.73853211 21.0537931 0.0275229358 21.1034483"></polygon>
+                    <polygon id="Shape" points="25.2055046 22.0827586 29.4330275 22.0468966 29.4330275 20.9351724 25.2055046 20.96"></polygon>
+                    <polygon id="Shape" points="10.5743119 25.1862069 24.2917431 24.9737931 24.2917431 23.9586207 10.5743119 24.137931"></polygon>
+                    <polygon id="Shape" points="0.0275229358 25.3489655 8.73853211 25.2137931 8.73853211 24.16 0.0275229358 24.2758621"></polygon>
+                    <polygon id="Shape" points="25.2055046 25.0675862 29.4330275 25.0013793 29.4330275 23.8924138 25.2055046 23.9475862"></polygon>
+                    <polygon id="Shape" points="23.2183486 28.0441379 29.7825688 27.8924138 29.7825688 26.8937931 23.2183486 27.0262069"></polygon>
+                    <polygon id="Shape" points="11.259633 28.32 21.9220183 28.0744828 21.9220183 27.0537931 11.259633 27.2717241"></polygon>
+                    <polygon id="Shape" points="0.0275229358 28.5765517 10.1174312 28.3448276 10.1174312 27.2965517 0.0275229358 27.5034483"></polygon>
+                    <polygon id="Shape" points="10.5743119 31.4289655 24.2917431 31.0124138 24.2917431 29.9972414 10.5743119 30.3806897"></polygon>
+                    <polygon id="Shape" points="0.0275229358 31.7462069 8.73853211 31.4841379 8.73853211 30.4303448 0.0275229358 30.6731034"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

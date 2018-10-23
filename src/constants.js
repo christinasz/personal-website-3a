@@ -1,4 +1,9 @@
 export const colors = {
-  primary: '#AA076B',
-  secondary: '#61045F'
+  background: '#fff',
+  primary: '#A281CB',
+  secondary: '#4A3379',
+  text: '#333',
+  textSecondary: '#555',
+  link: '#E9D7FF',
+  linkHover: '#fff',
 }

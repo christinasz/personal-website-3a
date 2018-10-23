@@ -2,13 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {colors} from './constants'
-import ArtLink from './components/ArtLink.js'
 import Icon from './components/Icon.js'
+import NavHeader from './components/NavHeader'
 
-
-import Laptop from './assets/Laptop.svg'
-import Notebook from './assets/Notebook.svg'
-import House from './assets/House.svg'
 import pdfResume from './assets/resume.pdf'
 
 const Header = styled.div`
@@ -31,22 +27,6 @@ const Container = styled.div `
   padding-bottom: 10%;
 `;
 
-const ArtContainer = styled.div`
-  padding: 8px;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  background-color: ${colors.primary};
-  bottom: 0;
-  display: flex;
-
-  @media only screen and (min-device-width: 768px) {
-    background-color:white;
-    position: static;
-    dislay: block;
-    padding: 0;
-  }
-`;
 const CenterColumn = styled.div `
   padding: 28px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -64,10 +44,9 @@ const Summary = () => (
   <div>
     <Heading>Summary</Heading>
     <ul>
-      <li>Familiar with multiple high-level programming languages such as C++ and Python</li>
+      <li>Experienced in developing for many form factors, from mobile to web development</li>
       <li>Strong visual sense cultivated from eight years of freelance design ventures</li>
       <li>Proficient in problem-solving and learning from self-teaching Photoshop and web development</li>
-      <li>Experienced in working effectively in several different environments, from startup to corporate</li>
     </ul>
   </div>
 )
@@ -75,6 +54,20 @@ const Summary = () => (
 const WorkExperience = () => (
   <div>
     <Heading>Work Experience</Heading>
+    <h3>Visier Solutions, Inc</h3>
+    <div className='row'>
+      <div className='col'>
+        <h4>Software Developer Co-op</h4>
+      </div>
+      <RightAligned className='col'>
+        <h4>January - August 2018</h4>
+      </RightAligned>
+    </div>
+    <ul>
+      <li>Implemented four new data visualizations for the Visier People app using Swift and Objective-C</li>
+      <li>Optimized the app for graphs to viewable in landscape orientation by transitioning from in-house
+layout library to Apple Auto Layout</li>
+    </ul>
     <h3>Bell Canada - Network Big Data</h3>
     <div className='row'>
       <div className='col'>
@@ -86,14 +79,8 @@ const WorkExperience = () => (
     </div>
     <ul>
       <li>Designed and developed a web portal for the Big Data team using React.js and Redux</li>
-      <ul>
-        <li>Worked closely with backend developer to design an architecture for the corresponding RESTful API</li>
-        <li>Created custom UI library to comply with Bell's existing identity</li>
-        <li>Engineered a custom search feature for MicroStrategy reports</li>
-      </ul>
-      <li>Wrote Impala queries for dashboards for the consumption team</li>
-      <li>Automated the QA process for business analytics with Python scripts, reducing time from hours to seconds</li>
-      <li>Established and designed brand identity and style guidelines for the entire Big Data team</li>
+      <li>Automated QA for business analytics with Python scripts, reducing time from hours to seconds</li>
+      <li>• Established and designed brand identity and style guidelines for the entire Big Data team</li>
     </ul>
     <h3>Rave Media, Inc. (Formerly WeMesh)</h3>
     <div className='row'>
@@ -118,32 +105,35 @@ const Projects = () => (
     <div className='row'>
       <div className='col'>
 
-        <h3><Link href='https://devpost.com/software/relevant-tag-suggestions' target='_blank'>Giphy Guesser</Link>
-        <Icon name='github' link='https://github.com/nicholaspun/giphyguesser'/>
+        <h3><Link href='https://devpost.com/software/hack-the-north-2018-9oexmy' target='_blank'>Hack the North Simulator</Link>
+        <Icon name='github' link='https://github.com/hygzhu/hack-the-north-2018'/>
         </h3>
 
       </div>
       <RightAligned className='col'>
-        <h4>September 2017 (PennApps XVI)</h4>
+        <h4>September 2018 (Hack the North 2018)</h4>
       </RightAligned>
     </div>
     <ul>
-      <li>iOS and Android guessing game that utilizes GIPHY’s API for content, written in React Native</li>
-      <li>Lead developer and UI designer on the project, ranked within top 30% of all participants</li>
+      <li>Created a 2D resource management game that simulates a hacker’s experience at Hack the North</li>
+      <li>Designed the character sprite sheets and animations</li>
+      <li>Worked on player interactions and game mechanics within the game</li>
+      <li>Winner of Best Use of Ubisoft’s Hacker’s Nest Student API</li>
     </ul>
     <div className='row'>
       <div className='col'>
-
-          <h3><Link href='https://christinazhang.me' target='_blank'>Personal Website
-        </Link> <Icon name='github' link='https://github.com/christinasz/personal-website-3a'/></h3>
+          <h3><Link href='https://devpost.com/software/what-s-it' target='_blank'>bridgED
+        </Link> <Icon name='github' link='https://github.com/christinasz/bridgED'/></h3>
       </div>
       <RightAligned className='col'>
-        <h4>August 2017 - Present</h4>
+        <h4>November 2017 (Hack Western 4)</h4>
       </RightAligned>
     </div>
     <ul>
-      <li>Creating a website to house portfolio, projects, and contact information</li>
-      <li>Includes lecture notes that are written in Markdown/LaTeX and rendered dynamically on the site</li>
+      <li>Developed an iOS/Android app that allows users to take pictures of their surroundings and receive
+a translation and description in their native language</li>
+      <li>Placed Top 6 Overall, Winner of Best Use of IBM Watson Visual Recognition API and
+Best Hack for Empowering Diversity through Design and Technology</li>
     </ul>
   </div>
 )
@@ -182,11 +172,7 @@ const Skills = () => (
 )
 const Resume = () => (
   <Container>
-    <ArtContainer>
-      <ArtLink name='Home' showIconOnMobile={true} iconName='home' path='' src={House} style={{position: 'relative', display: 'block'}} />
-      <ArtLink name='Projects' showIconOnMobile={true} iconName='laptop' path='projects' src={Laptop} style={{position: 'relative', display: 'block'}} />
-      <ArtLink name='Lecture Notes' showIconOnMobile={true} iconName='book' path='lecture-notes' src={Notebook} style={{position: 'relative', display: 'block'}}/>
-    </ArtContainer>
+    <NavHeader/>
     <CenterColumn className='container'>
       <Header>
         <Heading>Christina Zhang</Heading>

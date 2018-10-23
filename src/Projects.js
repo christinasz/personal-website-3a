@@ -5,11 +5,7 @@ import styled from 'styled-components';
 //self defined
 import {colors} from './constants'
 import Icon from './components/Icon.js'
-import ArtLink from './components/ArtLink.js'
-
-import Resume from './assets/Resume.svg'
-import Notebook from './assets/Notebook.svg'
-import House from './assets/House.svg'
+import NavHeader from './components/NavHeader.js'
 
 //images
 import GiphyGuesser from './assets/projects/GiphyGuesser.png'
@@ -17,33 +13,53 @@ import KeyboardSimulator from './assets/projects/KeyboardSimulator.PNG'
 import Interactivity from './assets/projects/Interactivity.PNG'
 import PersonalWebsite from './assets/projects/PersonalWebsite1.PNG'
 import CurrentWebsite from './assets/projects/PersonalWebsite2.PNG'
-import CtS from './assets/projects/ConnectTheStars.PNG'
-import CC3K from './assets/projects/CC3K.PNG'
+// TODO: Get PNGs of these
+import HtnSimulator from './assets/projects/htnSimulator.jpg'
+import BridgED from './assets/projects/bridgED.jpg'
 
 
 const list = [
   {
+    src: HtnSimulator,
+    name: 'Hack the North Simulator',
+    lang: 'C++',
+    date: 'September 2018 (Hack the North 2018)',
+    line1: `Winner of Best Use of Ubisoft Hacker's Nest API!`,
+    line2: `On the graphics side, I made and animated the character sprites and gameplay UI. 
+    On the dev side,implemented the character movement, player interaction, and gameplay mechanics.`,
+    links: [{name: 'github', link:'https://github.com/hygzhu/hack-the-north-2018' }, {name: 'globe', link: 'https://devpost.com/software/hack-the-north-2018-9oexmy'}]
+  },
+  {
+    src: BridgED,
+    name: 'bridgED',
+    lang: 'React Native',
+    date: 'November 2017 (HackWestern 4)',
+    line1: `Top 6 Finalist, Winner of Best Use of IBM Watson Visual Recognition API and Best Hack for Empowering Diversity through Design and Technology!`,
+    line2: `I designed the UI and logo of this app as well as worked on the React Native app.`,
+    links: [{name: 'github', link:'https://github.com/christinasz/bridgED' }, {name: 'globe', link: 'https://devpost.com/software/what-s-it'}]
+  },
+  {
     src: GiphyGuesser,
     name: 'Giphy Guesser',
     lang: 'React Native',
-    date: 'September 2017',
-    desc: `For PennAppsXVI, my team and I used GIPHY's API and Expo.io to create a mobile game that works for both iOS and Android.
+    date: 'September 2017 (PennAppsXVI)',
+    line1: `My team and I used GIPHY's API and Expo.io to create a mobile game that works for both iOS and Android.
     For the project, I was lead developer and UI designer. It placed within the top 30% of all submissions at PennApps.`,
     links: [{name: 'github', link:'https://github.com/nicholaspun/giphyguesser/' }, {name: 'globe', link: 'https://devpost.com/software/relevant-tag-suggestions'}]
   }, {
     src: CurrentWebsite,
-    name: 'Personal Website (3A)',
+    name: 'Personal Website (3A/3B)',
     lang: 'React.js',
-    date: 'August 2017 - Present',
-    desc: `The site you're viewing right now! Making my site be more than just a glorified resume by adding a Lecture Notes section, which
-    renders Markdown and LaTeX.`,
+    date: 'Last updated October 2018',
+    line1: `The site you're viewing right now! Making my site be more than just a glorified resume by adding a Lecture Notes section, which
+    renders Markdown and LaTeX. Underwent a facelift for 3B`,
     links: [{name: 'github', link:'https://github.com/christinasz/personal-website-3a' }, {name: 'globe', link: 'http://christinazhang.me'}]
   }, {
     src: KeyboardSimulator,
     name: 'Keyboard Simulator',
     lang: 'React.js',
     date: 'July 2017',
-    desc: `In the summer, a random Windows update made my keyboard start lagging, much to my dismay.
+    line1: `In the summer, a random Windows update made my keyboard start lagging, much to my dismay.
     It was hard to repeatedly describe why situation and my spelling had suddenly degraded my friends, so I made this to demonstrate what was happening.`,
     links: [{name: 'github', link:'https://github.com/christinasz/keyboard-simulator' }, {name: 'globe', link: 'http://christinasz.github.io/keyboard-simulator/'}]
   }, {
@@ -51,30 +67,15 @@ const list = [
     name: 'Interactivity',
     lang: 'React.js',
     date: 'May 2017',
-    desc: `A site for me to learn and play with React.js.`,
+    line1: `A site for me to learn and play with React.js.`,
     links: [{name: 'github', link:'https://github.com/christinasz/interactivity' }, {name: 'globe', link: 'http://christinasz.github.io/interactivity/'}]
   }, {
     src: PersonalWebsite,
     name: 'Personal Website (2B)',
     lang: 'HTML, CSS',
     date: 'January 2017',
-    desc: `A static website that displays general information, and my design portfolio. Still working on bringing everything (and more!) from that site to here.`,
+    line1: `A static website that displays general information, and my design portfolio. Still working on bringing everything (and more!) from that site to here.`,
     links: [{name: 'github', link:'https://github.com/christinasz/christinasz.github.io' }, {name: 'globe', link: 'http://christinasz.github.io/'}]
-  }, {
-    src: CtS,
-    name: 'Connect the Stars',
-    lang: 'Python/C#',
-    date: 'January 2017',
-    desc: `2D Platformer game that was originally built in Pygame. All the sprites and graphics done by me, but I quickly grew frustrated with the limitations of Pygame.
-    So I'm currently learning to use Unity and C# to remake the game.`,
-    links: [{name: 'github', link:'https://github.com/christinasz/Connect-the-Stars' }]
-  }, {
-    src: CC3K,
-    name: 'Chamber Crawler 3000',
-    lang: 'C++',
-    date: 'November - December 2016',
-    desc: `The final project for my Object Oriented Programming course. Based on the dungeon-crawling game, Rogue.`,
-    links: []
   }
 ]
 
@@ -85,17 +86,15 @@ const Title = styled.h1`
 const Container = styled.div `
   padding: 28px;
   padding-bottom: 10%;
+  
 `;
 
 const ProjectContainer = styled.div `
   text-align: left;
   padding: 32px;
   transition: all 0.2s;
-`;
-
-const Row = styled.div `
-  padding: 8px;
-  transition: all 0.2s;
+  max-width: 600px;
+  margin: 0 auto;
 `;
 
 const ProjectPreview = styled.div `
@@ -105,31 +104,14 @@ const ProjectPreview = styled.div `
   background-size: cover;
   background-position: center;
   transition: all 0.2s;
-  width: ${props => props.expanded
-  ? '100%'
-  : '200px'};
+  width: 100%;
+  max-width: 600px;
   height: 200px;
 `;
-const ArtContainer = styled.div`
-  padding: 8px;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  background-color: ${colors.primary};
-  bottom: 0;
-  display: flex;
-  color: white;
 
-  @media only screen and (min-device-width: 768px) {
-  background-color:white;
-    position: static;
-    dislay: block;
-    padding: 0;
-  }
-`;
 const Name = styled.div `
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 800;
   color: #333;
 `;
 
@@ -137,21 +119,6 @@ const Lang = styled.div `
   color: #333;
   font-size: 0.8em;
 `;
-
-class ProjectRow extends Component {
-  render() {
-    return (
-      <Row className='row'>
-        {this.props.projects.map((p, i) => (
-          <Project key={i} p={p}>
-            <Name>{p.name}</Name>
-            <Lang>{p.lang} | {p.date}</Lang>
-          </Project>
-        ))}
-      </Row>
-    )
-  }
-}
 
 class Project extends Component {
   constructor() {
@@ -172,7 +139,8 @@ class Project extends Component {
         {this.state.expanded &&
         <div>
           <div>{p.links.map((link, i) => (<Icon {...link} key={i}/>))}</div>
-          {p.desc}
+          <p>{p.line1}</p>
+          <p>{p.line2}</p>
         </div>
         }
       </ProjectContainer>
@@ -184,14 +152,15 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <ArtContainer>
-            <ArtLink name='Home' showIconOnMobile={true} iconName='home' path='' src={House} style={{position: 'relative', display: 'block'}} />
-            <ArtLink name='Resume' showIconOnMobile={true} iconName='file-text' path='resume' src={Resume} style={{position: 'relative', display: 'block'}} />
-            <ArtLink name='Lecture Notes' showIconOnMobile={true} iconName='book' path='lecture-notes' src={Notebook} style={{position: 'relative', display: 'block'}}/>
-        </ArtContainer>
+        <NavHeader/>
         <Container className='container'>
           <Title>Projects</Title>
-          <ProjectRow projects={list}/>
+          {list.map((p, i) => (
+          <Project key={i} p={p}>
+            <Name>{p.name}</Name>
+            <Lang>{p.lang} | {p.date}</Lang>
+          </Project>
+        ))}
         </Container>
       </div>
     )
