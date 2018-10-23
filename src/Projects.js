@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import {colors} from './constants'
 import Icon from './components/Icon.js'
 import ArtLink from './components/ArtLink.js'
+import NavHeader from './components/NavHeader.js'
 
 import Resume from './assets/Resume.svg'
 import Notebook from './assets/Notebook.svg'
@@ -32,11 +33,11 @@ const list = [
     links: [{name: 'github', link:'https://github.com/nicholaspun/giphyguesser/' }, {name: 'globe', link: 'https://devpost.com/software/relevant-tag-suggestions'}]
   }, {
     src: CurrentWebsite,
-    name: 'Personal Website (3A)',
+    name: 'Personal Website (3A/3B)',
     lang: 'React.js',
     date: 'August 2017 - Present',
     desc: `The site you're viewing right now! Making my site be more than just a glorified resume by adding a Lecture Notes section, which
-    renders Markdown and LaTeX.`,
+    renders Markdown and LaTeX. Underwent a facelift for 3B`,
     links: [{name: 'github', link:'https://github.com/christinasz/personal-website-3a' }, {name: 'globe', link: 'http://christinazhang.me'}]
   }, {
     src: KeyboardSimulator,
@@ -60,21 +61,6 @@ const list = [
     date: 'January 2017',
     desc: `A static website that displays general information, and my design portfolio. Still working on bringing everything (and more!) from that site to here.`,
     links: [{name: 'github', link:'https://github.com/christinasz/christinasz.github.io' }, {name: 'globe', link: 'http://christinasz.github.io/'}]
-  }, {
-    src: CtS,
-    name: 'Connect the Stars',
-    lang: 'Python/C#',
-    date: 'January 2017',
-    desc: `2D Platformer game that was originally built in Pygame. All the sprites and graphics done by me, but I quickly grew frustrated with the limitations of Pygame.
-    So I'm currently learning to use Unity and C# to remake the game.`,
-    links: [{name: 'github', link:'https://github.com/christinasz/Connect-the-Stars' }]
-  }, {
-    src: CC3K,
-    name: 'Chamber Crawler 3000',
-    lang: 'C++',
-    date: 'November - December 2016',
-    desc: `The final project for my Object Oriented Programming course. Based on the dungeon-crawling game, Rogue.`,
-    links: []
   }
 ]
 
@@ -184,11 +170,7 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <ArtContainer>
-            <ArtLink name='Home' showIconOnMobile={true} iconName='home' path='' src={House} style={{position: 'relative', display: 'block'}} />
-            <ArtLink name='Resume' showIconOnMobile={true} iconName='file-text' path='resume' src={Resume} style={{position: 'relative', display: 'block'}} />
-            <ArtLink name='Lecture Notes' showIconOnMobile={true} iconName='book' path='lecture-notes' src={Notebook} style={{position: 'relative', display: 'block'}}/>
-        </ArtContainer>
+        <NavHeader/>
         <Container className='container'>
           <Title>Projects</Title>
           <ProjectRow projects={list}/>
