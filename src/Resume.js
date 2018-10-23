@@ -2,14 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {colors} from './constants'
-import ArtLink from './components/ArtLink.js'
 import Icon from './components/Icon.js'
 import NavHeader from './components/NavHeader'
 
-
-import Laptop from './assets/Laptop.svg'
-import Notebook from './assets/Notebook.svg'
-import House from './assets/House.svg'
 import pdfResume from './assets/resume.pdf'
 
 const Header = styled.div`
@@ -32,22 +27,6 @@ const Container = styled.div `
   padding-bottom: 10%;
 `;
 
-const ArtContainer = styled.div`
-  padding: 8px;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  background-color: ${colors.primary};
-  bottom: 0;
-  display: flex;
-
-  @media only screen and (min-device-width: 768px) {
-    background-color:white;
-    position: static;
-    dislay: block;
-    padding: 0;
-  }
-`;
 const CenterColumn = styled.div `
   padding: 28px;
   background-color: rgba(255, 255, 255, 0.9);

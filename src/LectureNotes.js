@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import Markdown from 'react-rich-markdown';
-import {Route, NavLink, Link} from 'react-router-dom';
+import {Route, NavLink} from 'react-router-dom';
 import NavHeader from './components/NavHeader'
 
 import './lecturestyle.min.css'
@@ -46,15 +46,6 @@ const Content = styled.div `
   }
 `;
 
-// const AuthorLink = styled(Link)`
-//   color: white;
-//   &:visited, &:hover, &:focus {
-//     color: white;
-//     text-decoration: none;
-//     outline: none;
-//   }
-// `;
-
 const Navbar = styled.ul `
   padding-left: 0;
   color: white;
@@ -76,16 +67,6 @@ const NoteContainer = styled.div `
       border: 1px solid gray;
       padding: 4px;
     }
-  }
-`;
-
-const Info = styled.div `
-  display: none;
-  @media only screen and (min-device-width: 768px){
-    background-color: #673AB7;
-    display: block;
-    padding: 24px;
-    text-align: center;
   }
 `;
 
@@ -204,11 +185,6 @@ class LectureNotes extends Component {
         <NavHeader/>
         <Content>
             <Navbar>
-              {/* <Info>
-                <h3>Lecture Notes</h3>
-                <AuthorLink to='/'>Christina Zhang</AuthorLink>
-              </Info> */}
-              {/*List the courses*/}
               {notes.map((course, index) => (<Course key={index} match={match} data={course}/>))}
             </Navbar>
             {notes.map((course, index) => (course.lectures.map((lecture, index) => (

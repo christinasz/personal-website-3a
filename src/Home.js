@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import MediaQuery from 'react-responsive';
+import {TransitionMotion, spring, presets} from 'react-motion';
+
 import {colors} from './constants'
-import {BrowserRouter as Router, NavLink} from 'react-router-dom';
 
 import ArtLink from './components/ArtLink.js'
 import Icon from './components/Icon.js'
@@ -60,18 +61,19 @@ const Content = styled.div `
 	justify-content: space-evenly;
 `;
 
-const stuffs = [
+const blurbs = [
+	{
+		position: "3B Computer Science, HCI Option",
+		location: "University of Waterloo"
+	}, 
 	{
 		position: "Software Developer Co-op",
 		location: "Visier, Inc."
 	}, {
-		position: "3B Computer Science",
-		location: "University of Waterloo"
-	}, {
 		position: "Amateur baker",
 		location: ""
 	}, {
-		position: "Wannabe artist",
+		position: "Animation enthusiast",
 		location: ""
 	}
 ]
@@ -84,35 +86,90 @@ const Navigation = styled.ul `
 		align-self: flex-end;
 `;
 
-const Home = () => (
-	<Background>
-  <MediaQuery query="(max-device-width: 768px)">
-		<NavHeader/>
-	</MediaQuery>
-		<Content className="verticalCenter">
-			<Square>
-					<Name>Christina Zhang</Name>
-					<Subtitle>
-						{stuffs[0].position}
-						<br/>
-						@ {stuffs[0].location}
-					</Subtitle>
-			</Square>
-			<MediaQuery query="(min-device-width: 768px)">
-				<Navigation>
-					<ArtLink to='/resume' src={Resume}>Résumé</ArtLink>
-					<ArtLink to='/projects' src={Laptop}>Projects</ArtLink>
-					<ArtLink to='/lecture-notes'src={Notebook}>Lecture Notes</ArtLink>
-				</Navigation>
-			</MediaQuery>
-		</Content>
+class Home extends Component {
+	constructor(props) {
+    super(props);
+    this.state = {currentDescIndex: 0}; 
+	}
+	
+	componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      4500
+    );
+	}
+	
+	tick() {
+    this.setState({
+      currentDescIndex: (this.state.currentDescIndex + 1) % blurbs.length
+    });
+	}
+	
+  willLeave() {
+    return {
+		};
+	}
+	
+	willEnter() {
+    return {
+			opacity: 0,
+			height: 14,
+		};
+	};
 
-		<Icons>
-			<Icon name='github' link='https://github.com/christinasz'/>
-			<Icon name='linkedin' link='https://linkedin.com/in/christinaszhang'/>
-			<Icon name='envelope' link='mailto:christina.s.zhang@uwaterloo.ca'/>
-		</Icons>
-	</Background>
-	)
+	getStyles = () => {
+			return  [{
+				key: 's' + this.state.currentDescIndex.toString(),
+				data: blurbs[this.state.currentDescIndex],
+				style: {
+					opacity: spring(1, presets.gentle),
+					height: spring(14, presets.gentle),
+				},
+				verticalAlign: "top",
+			}];
+  };
+	
+	render() {
+		return (
+			<Background>
+				<MediaQuery query="(max-device-width: 768px)">
+					<NavHeader/>
+				</MediaQuery>
+					<Content className="verticalCenter">
+						
+								<TransitionMotion
+									styles={this.getStyles()}
+									willLeave={this.willLeave}
+									willEnter={this.willEnter}>
+									{interpolatedStyles =>
+										<Square>
+										<Name>Christina Zhang</Name>
+											{interpolatedStyles.map(({key, data, style}) =>
+												<Subtitle style={style}>
+													{data.position}
+													<br/>
+													{data.location === "" ? "" : "@ " + data.location}
+												</Subtitle>
+											)}
+										</Square>
+										}
+								</TransitionMotion>
+						<MediaQuery query="(min-device-width: 768px)">
+							<Navigation>
+								<ArtLink to='/resume' src={Resume}>Résumé</ArtLink>
+								<ArtLink to='/projects' src={Laptop}>Projects</ArtLink>
+								<ArtLink to='/lecture-notes'src={Notebook}>Lecture Notes</ArtLink>
+							</Navigation>
+						</MediaQuery>
+					</Content>
 
+					<Icons>
+						<Icon name='github' link='https://github.com/christinasz'/>
+						<Icon name='linkedin' link='https://linkedin.com/in/christinaszhang'/>
+						<Icon name='envelope' link='mailto:christina.s.zhang@uwaterloo.ca'/>
+					</Icons>
+				</Background>
+		)
+	}
+}
 export default Home
