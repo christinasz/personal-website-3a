@@ -86,28 +86,6 @@ const Navigation = styled.ul `
 		align-self: flex-end;
 `;
 
-<<<<<<< HEAD
-const Home = () => (
-  <Background>
-    <VerticalCenter className='container'>
-      <Name>Christina Zhang</Name>
-      Hello! I'm a 3B Computer Science student at the University of Waterloo.
-      <br/>
-      In short, I like designs, baking, and making things.
-      <br />
-      I also like being employed! I'm currently looking for an internship for Winter 2018.
-      <Icons>
-        <Icon name='github' link='https://github.com/christinasz'/>
-        <Icon name='linkedin' link='https://linkedin.com/in/christinaszhang'/>
-        <Icon name='envelope' link='mailto:christina.s.zhang@uwaterloo.ca'/>
-      </Icons>
-    </VerticalCenter>
-    <ArtContainer>
-      <ArtLink spin name='Resume' path='resume' src={Resume} width='27vw' style={{top: '0', left: '0'}}/>
-      <ArtLink spin name='Lecture Notes' path='lecture-notes' width='27vw' src={Notebook} style={{bottom: '20%', right: '2%'}}/>
-      <ArtLink spin name='Projects' path='projects' src={Laptop} width='27vw' style={{bottom: '2%', right: '50%'}}/>
-    </ArtContainer>
-=======
 class Home extends Component {
 	constructor(props) {
     super(props);
@@ -138,7 +116,6 @@ class Home extends Component {
 			height: 14,
 		};
 	};
->>>>>>> redesign
 
 	getStyles = () => {
 			return  [{
