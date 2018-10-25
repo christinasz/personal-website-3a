@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Mukta:400,600,700');
 
 @font-face {
-  font-family: Playlist;
-  src: url(/assets/fonts/Playlist.otf);
+  font-family: 'Playlist';
+  src: url('./assets/fonts/playlist-webfont.woff2') format('woff2'),
+       url('./assets/fonts/playlist-webfont.woff') format('woff'),
+       url('./assets/fonts/playlist-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
 }
 
 .verticalCenter {

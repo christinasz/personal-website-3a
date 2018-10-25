@@ -46,7 +46,7 @@ const Subtitle = styled.h3 `
   padding: 8px 0px;
   text-align: left;
   text-transform: uppercase;
-  font-size: 1.8vh;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 `;
@@ -73,14 +73,17 @@ const blurbs = [
 	{
 		position: "3B Computer Science, HCI Option",
 		location: "University of Waterloo"
-	}, 
+	},
 	{
 		position: "Software Developer Co-op",
 		location: "Visier, Inc."
 	}, {
 		position: "Amateur baker",
 		location: ""
-	}, {
+	},{
+    position: "Hackathon masochist",
+		location: ""
+  },{
 		position: "Animation enthusiast",
 		location: ""
 	}
@@ -96,27 +99,27 @@ const Navigation = styled.ul `
 class Home extends Component {
 	constructor(props) {
     super(props);
-    this.state = {currentDescIndex: 0}; 
+    this.state = {currentDescIndex: 0};
 	}
-	
+
 	componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
       4500
     );
 	}
-	
+
 	tick() {
     this.setState({
       currentDescIndex: (this.state.currentDescIndex + 1) % blurbs.length
     });
 	}
-	
+
   willLeave() {
     return {
 		};
 	}
-	
+
 	willEnter() {
     return {
 			opacity: 0,
@@ -135,7 +138,7 @@ class Home extends Component {
 				verticalAlign: "top",
 			}];
   };
-	
+
 	render() {
 		return (
 			<Background>
@@ -143,7 +146,7 @@ class Home extends Component {
 					<NavHeader/>
 				</MediaQuery>
 					<Content className="verticalCenter">
-						
+
 								<TransitionMotion
 									styles={this.getStyles()}
 									willLeave={this.willLeave}
