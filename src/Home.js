@@ -174,7 +174,7 @@ class Home extends Component {
 					</Content>
 
 					<Icons>
-						<Icon name='github' link='https://github.com/christinasz'/>
+						<Icon name='github' link='https://github.com/christinazhang'/>
 						<Icon name='linkedin' link='https://linkedin.com/in/christinaszhang'/>
 						<Icon name='envelope' link='mailto:christina.s.zhang@uwaterloo.ca'/>
 					</Icons>
